@@ -107,7 +107,6 @@ testCommand('bin/doctest --type xxx', {
 testCommand('bin/doctest test/shared/index.js', {
   status: 1,
   stdout: unlines([
-    'retrieving test/shared/index.js...',
     'running doctests in index.js...',
     '......x.x...........x........x',
     'FAIL: expected 5 on line 31 (got 4)',
@@ -122,7 +121,6 @@ testCommand('bin/doctest test/shared/index.js', {
 testCommand('bin/doctest test/shared/index.coffee', {
   status: 1,
   stdout: unlines([
-    'retrieving test/shared/index.coffee...',
     'running doctests in index.coffee...',
     '......x.x...........x........x',
     'FAIL: expected 5 on line 31 (got 4)',
@@ -137,7 +135,6 @@ testCommand('bin/doctest test/shared/index.coffee', {
 testCommand('bin/doctest test/shared/index.js test/shared/index.coffee', {
   status: 1,
   stdout: unlines([
-    'retrieving test/shared/index.js...',
     'running doctests in index.js...',
     '......x.x...........x........x',
     'FAIL: expected 5 on line 31 (got 4)',
@@ -145,7 +142,6 @@ testCommand('bin/doctest test/shared/index.js test/shared/index.coffee', {
     'FAIL: expected 9.5 on line 97 (got 5)',
     'FAIL: expected "on automatic semicolon insertion" on line 155 ' +
       '(got "the rewriter should not rely")',
-    'retrieving test/shared/index.coffee...',
     'running doctests in index.coffee...',
     '......x.x...........x........x',
     'FAIL: expected 5 on line 31 (got 4)',
@@ -277,7 +273,7 @@ testCommand(
     '}.call(this);'
   ]),
   stderr: ''
-});
+  });
 
 
 process.stdout.write(

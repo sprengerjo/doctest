@@ -27,9 +27,7 @@
     "sanctuary-type-identifiers": "1.0.x"
   },
   "devDependencies": {
-    "bower": "1.5.x",
     "eslint": "3.19.x",
-    "remember-bower": "0.1.x",
     "sanctuary-style": "0.5.x",
     "xyz": "2.1.x"
   },
